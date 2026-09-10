@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title> 1Q Skills Test</title>
+</head>
+<body>
+    <h3>Joseph's Ta-Co's</h3>
+
+    <!-- Menu Items with Prices -->
+    <p>
+        <input type="checkbox" id="item1" value="99">
+        <label for="item1">Classic Beef Taco — ₱99.00</label>
+    </p>
+    <p>
+        <input type="checkbox" id="item2" value="129">
+        <label for="item2">Pork Carnitas Taco ₱129</label>
+    </p>
+    <p>
+        <input type="checkbox" id="item3" value="189">
+        <label for="item3">Beef Birria Taco ₱189</label>
+    </p>
+    <p>
+        <input type="checkbox" id="item4" value="159">
+        <label for="item4">Baja Fish Taco ₱159</label>
+    </p>
+    <p>
+        <input type="checkbox" id="item5" value="129">
+        <label for="item5">Grilled Chicken Taco ₱129</label>
+    </p>
+    <br>
+    <button py-click="generate_receipt">Generate Receipt</button>
+    <div id="receipt_display"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
